@@ -1,0 +1,25 @@
+from app_music.models import *
+
+m1 = Musico(nome="Roger Waters",cpf="11111111111",salario="10000.00",data_nasc="1960-5-5")
+
+m2 = Musico(nome="Daniel",cpf="00000000000",salario="1.00",data_nasc="1993-5-5")
+
+e1 = EstiloMusical(nome="Rock")
+e2 = EstiloMusical(nome="Pagode")
+
+m1.save()
+m2.save()
+e1.save()
+e2.save()
+
+b1 = Banda(nome="Pink Floyd",estilo_musical=e1)
+b2 = Banda(nome="Jeito Moleque",estilo_musical=e2)
+
+b1.save()
+b1.musicos.add(m1)
+b1.musicos.add(m2)
+
+Musico.objects.all()
+EstiloMusical.objects.all()
+Banda.objects.all()
+
