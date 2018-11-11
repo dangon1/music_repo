@@ -1,0 +1,5 @@
+Professor,
+
+Fiz o for de iteração pelo nome dos músicos somente depois de tirar os prints de 1 a 5. 
+Portanto, quando a Banda é mostrada nesses prints a lista de músicos não mostra o nome deles.
+No entanto, no print de número 6 é possível ver que a implementação funcionou: A Banda Pink Floyd tem os Músicos: Roger Waters e Daniel
